@@ -1,0 +1,33 @@
+---
+name: Statick
+
+on: # NOLINT
+  pull_request:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Statick
+        uses: sscpac/statick-action@v0.12.0
+        with:
+          profile: self_check.yaml
+          timings: true
+
+      - name: Statick Markdown
+        uses: sscpac/statick-action@v0.12.0
+        with:
+          config: md-config.yaml
+          profile: md-profile.yaml
+
+      - name: Statick Tooling
+        uses: sscpac/statick-action@v0.12.0
+        with:
+          config: tooling-config.yaml
+          profile: tooling-profile.yaml
+          user_paths: .github/workflows
