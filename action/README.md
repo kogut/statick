@@ -1,12 +1,12 @@
 # statick-action
 
-![Statick](https://github.com/sscpac/statick-action/workflows/Statick/badge.svg)
+![Statick](https://github.com/triboelectric/statick-action/workflows/Statick/badge.svg)
 
 Improve your code quality by running dozens of the most popular and effective static code analysis
 tools at once from one simple action.
 The supported tools cover many popular programming, scripting, and documentation languages.
 
-This **GitHub Action** uses the **[Statick](https://github.com/sscpac/statick)** static code analysis tool.
+This **GitHub Action** uses the **[Statick](https://github.com/triboelectric/statick)** static code analysis tool.
 
 The action inputs mirror the command line arguments for the CLI version of
 Statick, and much more detail about the powerful Statick configuration options is
@@ -62,5 +62,5 @@ uses: actions/statick-action
 
 More advanced usage, including use of specific profiles, configurations,
 and user-specified resources can be viewed in the
-[self-test workflow](https://github.com/sscpac/statick-action/blob/main/.github/workflows/self-test.yml)
+[self-test workflow](https://github.com/triboelectric/statick/blob/main/.github/workflows/self-test.yml)
 in this repository.
