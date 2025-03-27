@@ -19,16 +19,3 @@ jobs:
           profile: self_check.yaml
           timings: true
           user_paths: src/statick_tool/rsc
-
-      # - name: Statick Markdown
-      #   uses: ./action
-      #   with:
-      #     config: md-config.yaml
-      #     profile: md-profile.yaml
-
-      # - name: Statick Tooling
-      #   uses: ./action
-      #   with:
-      #     config: tooling-config.yaml
-      #     profile: tooling-profile.yaml
-      #     user_paths: .github/workflows
