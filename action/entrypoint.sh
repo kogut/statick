@@ -53,6 +53,7 @@ fi
 ls -l
 cat src/statick_tool/rsc/exceptions.yaml
 echo $STATICK_ARGS
+statick --version
 statick $STATICK_ARGS
 
 exit_code=$?

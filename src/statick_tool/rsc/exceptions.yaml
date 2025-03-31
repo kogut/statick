@@ -116,7 +116,8 @@ packages:
           globs: ["statick_tool/plugins/tool/lizard_tool_plugin.py"]
         # Third party shell scripts useful in dev container.
         - tools: [shellcheck]
-          globs: [".devcontainer/config/*"]
+          globs: [".devcontainer/config/*", "/github/workspace/.devcontainer/config/.git-completion.bash"]
+          
 
 ignore_packages:
   []
