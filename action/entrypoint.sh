@@ -52,6 +52,7 @@ fi
 # shellcheck disable=SC2086
 # statick $STATICK_ARGS
 ls -l
+cat src/statick_tool/rsc/exceptions.yaml
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
