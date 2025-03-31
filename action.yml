@@ -1,5 +1,5 @@
 name: 'Statick-CI'
-author: 'NIWC PAC'
+author: 'Triboelectric'
 description: 'Run Statick'
 branding:
   icon: 'zap'
@@ -44,4 +44,4 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'action/Dockerfile'
+  image: 'Dockerfile'
