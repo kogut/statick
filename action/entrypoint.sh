@@ -50,9 +50,10 @@ fi
 # shellcheck disable=SC1091
 . /opt/venv/bin/activate
 # shellcheck disable=SC2086
-# statick $STATICK_ARGS
 ls -l
 cat src/statick_tool/rsc/exceptions.yaml
+statick $STATICK_ARGS
+
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
