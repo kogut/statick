@@ -4,12 +4,7 @@ mkdir -p /tmp/statick_output
 
 STATICK_ARGS=""
 
-if [ -n "$INPUT_PACKAGE_PATH" ]; then
-  STATICK_ARGS+=" $INPUT_PACKAGE_PATH"
-else
-  echo "Package not supplied, but is required."
-  exit 1
-fi
+
 
 if [ -n "$INPUT_USER_PATHS" ]; then
   STATICK_ARGS+=" --user-paths $INPUT_USER_PATHS"
@@ -47,6 +42,12 @@ if [ -n "$INPUT_TIMINGS" ]; then
   fi
 fi
 
+if [ -n "$INPUT_PACKAGE_PATH" ]; then
+  STATICK_ARGS+=" $INPUT_PACKAGE_PATH"
+else
+  echo "Package not supplied, but is required."
+  exit 1
+fi
 
 # shellcheck disable=SC1091
 . /opt/venv/bin/activate
