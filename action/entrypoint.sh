@@ -11,6 +11,10 @@ else
   exit 1
 fi
 
+if [ -n "$INPUT_USER_PATHS" ]; then
+  STATICK_ARGS+=" --user-paths $INPUT_USER_PATHS"
+fi
+
 if [ -n "$INPUT_CHECK" ]; then
   if [ "$INPUT_CHECK" = "true" ]; then
     STATICK_ARGS+=" --check"
@@ -43,9 +47,6 @@ if [ -n "$INPUT_TIMINGS" ]; then
   fi
 fi
 
-if [ -n "$INPUT_USER_PATHS" ]; then
-  STATICK_ARGS+=" --user-paths $INPUT_USER_PATHS"
-fi
 
 # shellcheck disable=SC1091
 . /opt/venv/bin/activate
