@@ -20,7 +20,7 @@ inputs:
   log_level:
     description: "Log verbosity level"
     required: false
-    default: INFO
+    default: DEBUG
   output_path:
     description: "Path to store output logs"
     required: false
@@ -28,7 +28,7 @@ inputs:
   package_path:
     description: "Path to search for files"
     required: false
-    default: /github/workspace
+    default: .
   profile:
     description: "Profile configuration"
     required: false
