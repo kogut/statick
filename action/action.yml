@@ -28,7 +28,7 @@ inputs:
   package_path:
     description: "Path to search for files"
     required: false
-    default: .
+    default: /github/workspace
   profile:
     description: "Profile configuration"
     required: false
