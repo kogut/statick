@@ -117,7 +117,7 @@ packages:
         # Third party shell scripts useful in dev container.
         - tools: [shellcheck]
           globs: [".devcontainer/config/*"]
-          
+
 
 ignore_packages:
   []

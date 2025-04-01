@@ -18,4 +18,4 @@ jobs:
         with:
           profile: self_check.yaml
           timings: true
-          user_paths: src/statick_tool
+          user_paths: /github/workspace/src/statick_tool
