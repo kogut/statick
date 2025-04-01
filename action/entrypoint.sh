@@ -42,6 +42,8 @@ if [ -n "$INPUT_TIMINGS" ]; then
   fi
 fi
 
+echo "INPUT PATH ${INPUT_PACKAGE_PATH}"
+
 if [ -n "$INPUT_PACKAGE_PATH" ]; then
   STATICK_ARGS+=" $INPUT_PACKAGE_PATH"
 else
