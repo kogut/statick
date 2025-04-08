@@ -55,7 +55,8 @@ cat src/statick_tool/rsc/exceptions.yaml
 echo "$STATICK_ARGS"
 which statick
 statick --version
-statick .
+. /opt/venv/bin/activate
+cat /opt/venv/lib/python3.12/site-packages/statick_tool/exceptions.py
 statick $STATICK_ARGS
 
 exit_code=$?
