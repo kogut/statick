@@ -55,6 +55,7 @@ cat src/statick_tool/rsc/exceptions.yaml
 echo "$STATICK_ARGS"
 which statick
 statick --version
+statick .
 statick $STATICK_ARGS
 
 exit_code=$?
