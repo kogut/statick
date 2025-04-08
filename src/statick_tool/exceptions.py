@@ -30,6 +30,7 @@ class Exceptions:
         Args:
             filename: Filename of exceptions.
         """
+        print(f"TOOL {filename}")
         if not filename:
             raise ValueError(f"{filename} is not a valid file")
         with open(filename, encoding="utf8") as fname:
