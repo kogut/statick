@@ -51,7 +51,7 @@ fi
 . /opt/venv/bin/activate
 # shellcheck disable=SC2086
 ls -l
-cat src/statick_tool/rsc/exceptions.yaml
+cat /github/workspace/src/statick_tool/rsc/exceptions.yaml
 echo "$STATICK_ARGS"
 which statick
 statick --version
