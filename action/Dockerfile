@@ -1,4 +1,4 @@
-FROM ghcr.io/triboelectric/statick:0.12.0
+FROM ghcr.io/triboelectric/statick:debug
 
 LABEL "name"="Statick Action"
 LABEL "version"="0.12.0"
