@@ -137,6 +137,6 @@ jobs:
       - name: Self check
         if: runner.os == 'Linux'
         run: |
-          # Remove artifacts from prior steps
-          git clean -dfx
-          statick . --output-directory /tmp/statick-output --check --profile self_check.yaml --log INFO
+          mkdir statick-output
+          find . -type f | wc -l
+          statick . --output-directory statick-output --check --profile self_check.yaml --log INFO
