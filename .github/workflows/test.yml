@@ -138,4 +138,5 @@ jobs:
         if: runner.os == 'Linux'
         run: |
           mkdir statick-output
+          ls -l
           statick . --output-directory statick-output --check --profile self_check.yaml --log INFO
